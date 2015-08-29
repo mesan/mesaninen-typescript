@@ -21,6 +21,8 @@ vendor/
 # Ignore Javascript files transpiled from TypeScript
 mesaninen-typescript/src/app/**/*.js
 mesaninen-typescript/src/app/**/*.js.map
+mesaninen-typescript/src/common/**/*.js
+mesaninen-typescript/src/common/**/*.js.map
 
 [Dd]ebug/
 [Dd]ebugPublic/
