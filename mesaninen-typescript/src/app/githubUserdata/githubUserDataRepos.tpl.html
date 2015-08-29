@@ -1,0 +1,8 @@
+﻿<div id="userrepos" data-ng-if="true">
+    <h4>User repositories</h4>
+    <div class="repo" data-ng-repeat="repo in currentUser.repos">
+        <p>Name: {{repo.name}}</p>
+        <p>Language: {{repo.language}}</p>
+        <a href="{{repo.html_url}}">Link to repo</a>
+    </div>
+</div>

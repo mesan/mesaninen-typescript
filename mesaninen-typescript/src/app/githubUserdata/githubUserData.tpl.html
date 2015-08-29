@@ -1,0 +1,12 @@
+﻿<div>
+    <div id="inputField">
+        Enter user name
+        <form data-ng-submit="currentUser.fetch()">
+            <input data-ng-model="currentUser.userName" required/>
+            <input type="submit" value="Fetch!"/>
+        </form>
+    </div>
+    <div data-ngc-github-user-data-info data-ng-if="currentUser.isAvailable()"> </div>
+    <div data-ngc-github-user-data-repos data-ng-if="currentUser.isAvailable()"> </div>
+    <p data-ng-if="!currentUser.isAvailable()">User does not exist</p>
+</div>

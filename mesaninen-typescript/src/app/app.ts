@@ -2,5 +2,14 @@
 
     "use strict";
 
-    angular.module("app", []);
+
+    angular.module("app",
+    [
+        "currentUserName",
+        "githubUserDataFetcherService",
+        "githubUserDataModule",
+        "templates-app",
+        "templates-common"
+    ]);
+
 })();

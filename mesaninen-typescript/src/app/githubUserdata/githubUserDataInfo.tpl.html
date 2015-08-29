@@ -1,0 +1,9 @@
+﻿<div id="userinfo" data-ng-if="true">
+    <h4>User Info</h4>
+    <img width="100" height="100" src="{{currentUser.user.avatar_url}}"/>
+    <p> Login name: {{currentUser.user.login}}</p>
+    <p> Full name: {{currentUser.user.name}}</p>
+    <p> Joined at {{currentUser.user.created_at}}</p>
+    <a href="{{currentUser.user.html_url}}">Link to github profile</a>
+    <p> Number of public repos: {{currentUser.user.public_repos}}</p>
+</div>

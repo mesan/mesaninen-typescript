@@ -7,7 +7,7 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <OutputPath>bin</OutputPath>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
     <TypeScriptToolsVersion>1.5</TypeScriptToolsVersion>
@@ -17,11 +17,15 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="src\app\githubUserdata\githubUserData.tpl.html" />
+    <Content Include="src\app\githubUserdata\githubUserDataInfo.tpl.html" />
+    <Content Include="src\app\githubUserdata\githubUserDataRepos.tpl.html" />
     <Content Include="src\index.html" />
   </ItemGroup>
   <ItemGroup>
@@ -39,10 +43,20 @@
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="src\app\app.spec.ts" />
     <TypeScriptCompile Include="src\app\app.ts" />
+    <TypeScriptCompile Include="src\app\githubUserdata\githubUserData.ts" />
+    <TypeScriptCompile Include="src\common\currentUser\currentUserName.ts" />
+    <TypeScriptCompile Include="src\common\fetcher\fetcherService.ts" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\assets\" />
-    <Folder Include="src\common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>

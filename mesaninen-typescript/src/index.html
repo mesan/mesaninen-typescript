@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html >
   <head>
     <!-- font awesome from BootstrapCDN -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -10,7 +10,8 @@
     <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
     <script type="text/javascript" src="<%= file %>"></script><% }); %>
   </head>
-  <body>
-    <h1>Mesaninen - TypeScript</h1>
+  <body ng-app="app">
+    <h1>Github user info</h1>
+    <div data-ngc-github-user-data></div>
   </body>
 </html>
