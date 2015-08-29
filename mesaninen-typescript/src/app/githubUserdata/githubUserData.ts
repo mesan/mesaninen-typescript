@@ -42,12 +42,12 @@ module app.GithubUserData {
 
         private getUserData(): void {
             this.githubUserDataServiceFetcher.getUserInfo()
-                .then((userData: Services.IGithubUser): void => { this.user = userData || null; });
+                .then((userData: Services.IGithubUser): void => { this.user = userData; });
         }
 
         private getUserRepos(): void {
             this.githubUserDataServiceFetcher.getUserRepos()
-                .then((userRepos: Services.IGithubUserRepos): void => { this.repos = userRepos || null; });
+                .then((userRepos: Services.IGithubUserRepos): void => { this.repos = userRepos; });
         }
     }
 
